@@ -6,9 +6,9 @@ class Invert
     T value_;
     
     public:
-        Invert(T value);
-        ~Invert();
+        explicit Invert(T value) : value_(value) {}
+        ~Invert() {}
     
-        T get() const;
+        T get() const {return value_;}
         
 };

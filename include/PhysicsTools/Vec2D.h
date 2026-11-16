@@ -2,9 +2,11 @@
 
 class Vec2D
 {
-    float x_, y_;
+    
     
     public:
+        float x, y;
+    
         Vec2D(float, float);
         ~Vec2D();
     

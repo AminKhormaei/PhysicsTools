@@ -2,9 +2,9 @@
 
 class Vec3D
 {
-    float x_, y_, z_;
-    
     public:
+        float x, y, z;
+    
         Vec3D(float, float, float);
         ~Vec3D();
     
