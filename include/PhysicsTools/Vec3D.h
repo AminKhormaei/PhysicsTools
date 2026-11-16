@@ -8,6 +8,8 @@ class Vec3D
         Vec3D(float, float, float);
         ~Vec3D();
     
+        Vec3D operator-() const;
+    
         float get_x() const;
         float get_y() const;
         float get_z() const;
