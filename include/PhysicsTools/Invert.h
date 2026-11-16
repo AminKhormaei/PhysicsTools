@@ -7,8 +7,7 @@ class Invert
     
     public:
         explicit Invert(T value) : value_(value) {}
-        ~Invert() {}
     
-        T get() const {return value_;}
+        operator T() const {return -value_;}
         
 };
