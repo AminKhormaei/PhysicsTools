@@ -1,0 +1,25 @@
+cmake_minimum_required(VERSION 3.20)
+
+project(PhysicsTools LANGUAGES CXX)
+
+# Automatically collect source and header files
+file(GLOB_RECURSE PHYSICS_TOOLS_SOURCES CONFIGURE_DEPENDS
+        "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp"
+        "${CMAKE_CURRENT_SOURCE_DIR}/include/*.h"
+        "${CMAKE_CURRENT_SOURCE_DIR}/include/*.hpp"
+)
+
+# Create library
+add_library(PhysicsTools STATIC
+        ${PHYSICS_TOOLS_SOURCES}
+)
+
+add_library(PhysicsTools::PhysicsTools ALIAS PhysicsTools)
+
+target_include_directories(PhysicsTools PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+
+target_link_libraries(PhysicsTools PUBLIC raylib)
+
+target_compile_features(PhysicsTools PUBLIC cxx_std_17)
