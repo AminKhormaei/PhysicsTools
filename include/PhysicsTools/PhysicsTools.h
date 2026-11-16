@@ -5,4 +5,3 @@
 #include "Invert.h"
 #include "Length.h"
 #include "VecScalarMultiplier.h"
-#include "Vec3D_Scalar_Multiply.h"

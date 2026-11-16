@@ -10,16 +10,16 @@ file(GLOB_RECURSE PHYSICS_TOOLS_SOURCES CONFIGURE_DEPENDS
 )
 
 # Create library
-add_library(PhysicsTools STATIC
+add_library(PhysicsTools INTERFACE
         ${PHYSICS_TOOLS_SOURCES}
 )
 
 add_library(PhysicsTools::PhysicsTools ALIAS PhysicsTools)
 
-target_include_directories(PhysicsTools PUBLIC
+target_include_directories(PhysicsTools INTERFACE
         ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
-target_link_libraries(PhysicsTools PUBLIC raylib)
+target_link_libraries(PhysicsTools INTERFACE raylib)
 
-target_compile_features(PhysicsTools PUBLIC cxx_std_17)
+target_compile_features(PhysicsTools INTERFACE cxx_std_17)
