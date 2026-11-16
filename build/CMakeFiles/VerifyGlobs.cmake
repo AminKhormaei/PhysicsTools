@@ -5,6 +5,7 @@
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "E:/PhysicsTools/include/*.h")
 set(OLD_GLOB
   "E:/PhysicsTools/include/PhysicsTools/Vec2D.h"
+  "E:/PhysicsTools/include/PhysicsTools/Vec3D.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -56,6 +57,7 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "E:/PhysicsTools/src/*.cpp")
 set(OLD_GLOB
   "E:/PhysicsTools/src/Vec2D.cpp"
+  "E:/PhysicsTools/src/Vec3D.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

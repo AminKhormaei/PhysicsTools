@@ -4,9 +4,15 @@
     <ClCompile Include="E:\PhysicsTools\src\Vec2D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="E:\PhysicsTools\src\Vec3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="E:\PhysicsTools\include\PhysicsTools\Vec2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\PhysicsTools\include\PhysicsTools\Vec3D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
