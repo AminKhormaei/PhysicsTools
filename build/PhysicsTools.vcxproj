@@ -300,8 +300,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\PhysicsTools\Invert.h" />
     <ClInclude Include="E:\PhysicsTools\include\PhysicsTools\Vec2D.h" />
     <ClInclude Include="E:\PhysicsTools\include\PhysicsTools\Vec3D.h" />
+    <ClCompile Include="..\src\Invert.cpp" />
     <ClCompile Include="E:\PhysicsTools\src\Vec2D.cpp" />
     <ClCompile Include="E:\PhysicsTools\src\Vec3D.cpp" />
   </ItemGroup>
