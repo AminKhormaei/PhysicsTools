@@ -1,7 +1,11 @@
-﻿#pragma once
+#pragma once
 #include "Vec2D.h"
 #include "Vec3D.h"
 
+// Scalar multiply. Both orderings are provided so `2.0f * v` and `v * 2.0f`
+// compile without implicit conversions. Kept trivial so that in a loop like
+// `p += v * dt` the temporary folds into the compound assignment instead of
+// materializing.
 inline Vec2D operator*(float s, const Vec2D& v) { return Vec2D{ s * v.x, s * v.y }; }
 inline Vec2D operator*(const Vec2D& v, float s) { return Vec2D{ v.x * s, v.y * s }; }
 
