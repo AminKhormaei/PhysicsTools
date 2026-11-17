@@ -1,12 +1,12 @@
 ﻿#pragma once
 
 template <typename T>
-class Invert
+class VecInvert
 {
     T value_;
     
     public:
-        explicit Invert(T value) : value_(value) {}
+        explicit VecInvert(T value) : value_(value) {}
     
         operator T() const {return -value_;}
         
