@@ -46,8 +46,8 @@ inline float Cross(const Vec2D& a, const Vec2D& b) { return a.x * b.y - a.y * b.
 inline Vec3D Cross(const Vec3D& a, const Vec3D& b)
 {
     return Vec3D{
-        a.y * b.z - a.z * b.y,  
-        a.z * b.x - a.x * b.z,  
+        a.y * b.z - a.z * b.y,
+        a.z * b.x - a.x * b.z,
         a.x * b.y - a.y * b.x
     };
 }

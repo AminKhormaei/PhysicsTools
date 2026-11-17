@@ -32,7 +32,9 @@ public:
      *
      * @note Marked `explicit` to prevent accidental implicit construction.
      */
-    explicit VecInvert(T value) : value_(value) {}
+    explicit VecInvert(T value) : value_(value)
+    {
+    }
 
     /**
      * @brief Implicit conversion to `T`. Returns the negated stored value.

@@ -177,7 +177,12 @@ inline void Normalize(Vec3D& v)
  *
  * @see Normalize(Vec2D&)
  */
-inline Vec2D Normalized(const Vec2D& v) { Vec2D out = v; Normalize(out); return out; }
+inline Vec2D Normalized(const Vec2D& v)
+{
+    Vec2D out = v;
+    Normalize(out);
+    return out;
+}
 
 /**
  * @brief Returns a normalized copy of a 3D vector.
@@ -190,4 +195,9 @@ inline Vec2D Normalized(const Vec2D& v) { Vec2D out = v; Normalize(out); return 
  *
  * @see Normalize(Vec3D&)
  */
-inline Vec3D Normalized(const Vec3D& v) { Vec3D out = v; Normalize(out); return out; }
+inline Vec3D Normalized(const Vec3D& v)
+{
+    Vec3D out = v;
+    Normalize(out);
+    return out;
+}

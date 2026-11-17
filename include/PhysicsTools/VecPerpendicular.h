@@ -47,7 +47,7 @@
  */
 inline Vec2D Perpendicular(const Vec2D& v)
 {
-    return Vec2D{ -v.y, v.x };
+    return Vec2D{-v.y, v.x};
 }
 
 /**
@@ -81,11 +81,11 @@ inline Vec3D Perpendicular(const Vec3D& v)
     // Pick the axis whose absolute component in v is smallest.
     Vec3D axis;
     if (ax <= ay && ax <= az)
-        axis = Vec3D{ 1.0f, 0.0f, 0.0f };
+        axis = Vec3D{1.0f, 0.0f, 0.0f};
     else if (ay <= az)
-        axis = Vec3D{ 0.0f, 1.0f, 0.0f };
+        axis = Vec3D{0.0f, 1.0f, 0.0f};
     else
-        axis = Vec3D{ 0.0f, 0.0f, 1.0f };
+        axis = Vec3D{0.0f, 0.0f, 1.0f};
 
     return Cross(v, axis);
 }

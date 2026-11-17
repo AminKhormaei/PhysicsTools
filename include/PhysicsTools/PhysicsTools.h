@@ -11,4 +11,5 @@
 #include "VecSubtraction.h"
 #include "VecDotProduct.h"
 #include "VecCrossProduct.h"
+#include "Particle.h"
 #include "SoA.h"
