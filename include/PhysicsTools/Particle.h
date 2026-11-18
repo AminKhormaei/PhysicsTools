@@ -1,5 +1,7 @@
 ﻿#pragma once
 
+#include <cassert>
+#include <cmath>
 #include "Vec2D.h"
 #include "Vec3D.h"
 
