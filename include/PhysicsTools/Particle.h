@@ -5,6 +5,7 @@
 #include "Vec2D.h"
 #include "Vec3D.h"
 
+
 /**
  * @brief The smallest unit of simulation — a point mass with no rotation.
  *
@@ -62,6 +63,7 @@ struct Particle
 
         ClearForces();
     }
+
 };
 
 using Particle2D = Particle<Vec2D>;
