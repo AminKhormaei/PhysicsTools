@@ -34,8 +34,15 @@ struct Particle
     TVec velocity;
     TVec acceleration;
     TVec forceAccumulator;
+    float age;
+    float life;
     float inverseMass;
     float damping;
+    
+    bool IsAlive() const
+    {
+        return age < life;
+    }
     
     void AddForce(const TVec& force)
     {
@@ -51,8 +58,10 @@ struct Particle
     void Integrate(float dt)
     {
         if (inverseMass <= 0.0f) return;
+        if (dt <= 0.0f) return;
         assert(dt > 0.0f);
-
+        
+        
         position += velocity * dt;
         
         TVec resultingAcceleration = acceleration + forceAccumulator * inverseMass;
