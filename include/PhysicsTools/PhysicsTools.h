@@ -13,4 +13,5 @@
 #include "VecCrossProduct.h"
 #include "Particle.h"
 #include "Random.h"
+#include "ParticleSystem.h"
 #include "SoA.h"

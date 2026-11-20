@@ -36,6 +36,7 @@ struct Particle
     TVec forceAccumulator;
     float age;
     float life;
+    float NormalizedAge() const { return age / life; }
     float inverseMass;
     float damping;
     
